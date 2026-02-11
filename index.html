@@ -3,46 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha de Personaje</title>
+    <title>Superman - Ficha de Personaje</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; padding: 20px; }
-        .card { background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 600px; overflow: hidden; }
-        .header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-top: -75px; background: #ddd; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            display: flex; 
+            justify-content: center; 
+            padding: 20px; 
+        }
+
+        .card { 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4); 
+            width: 100%; 
+            max-width: 650px; 
+            overflow: hidden; 
+        }
+
+        .header { 
+            background: linear-gradient(to right, #0033a0, #e10600);
+            color: yellow; 
+            padding: 30px; 
+            text-align: center; 
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .profile-img { 
+            width: 160px; 
+            height: 160px; 
+            border-radius: 50%; 
+            border: 6px solid #e10600; 
+            object-fit: cover; 
+            margin-top: -80px; 
+        }
+
         .content { padding: 30px; }
-        h2 { margin: 10px 0; color: #2c3e50; }
-        .tag { display: inline-block; background: #e74c3c; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; margin-bottom: 15px; }
-        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; }
-        .info-item b { color: #7f8c8d; display: block; font-size: 0.85em; text-transform: uppercase; }
-        .bio { line-height: 1.6; color: #555; margin-top: 20px; }
+
+        h2 { 
+            margin: 10px 0; 
+            color: #0033a0; 
+            font-size: 24px;
+        }
+
+        .tag { 
+            display: inline-block; 
+            background: #e10600; 
+            color: white; 
+            padding: 6px 15px; 
+            border-radius: 20px; 
+            font-size: 0.9em; 
+            margin-bottom: 15px; 
+        }
+
+        .bio { 
+            line-height: 1.6; 
+            color: #444; 
+            margin-top: 20px; 
+        }
+
+        .info-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; 
+            margin-top: 20px; 
+            border-top: 2px solid #eee; 
+            padding-top: 20px; 
+        }
+
+        .info-item b { 
+            color: #e10600; 
+            display: block; 
+            font-size: 0.85em; 
+            text-transform: uppercase; 
+        }
+
+        .powers {
+            margin-top: 25px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .powers ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .powers li {
+            margin: 8px 0;
+            padding-left: 10px;
+        }
+
     </style>
 </head>
 <body>
 
 <div class="card">
     <div class="header">
-        <!-- Reemplaza la URL de la imagen con la de tu personaje -->
-        <div style="height: 80px;"></div> 
+        SUPERMAN 🦸‍♂️
     </div>
+
     <div style="text-align: center;">
-        <img src="https://via.placeholder.com" alt="Avatar del Personaje" class="profile-img">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png" 
+             alt="Superman" class="profile-img">
     </div>
+
     <div class="content">
         <div style="text-align: center;">
-            <span class="tag">Guerrero Solitario</span>
-            <h2>Nombre del Personaje</h2>
+            <span class="tag">El Hombre de Acero</span>
+            <h2>Clark Kent / Kal-El</h2>
         </div>
         
         <p class="bio">
-            <b>Historia:</b> Un breve resumen sobre el origen del personaje, sus motivaciones y el mundo en el que habita. Ideal para dar contexto narrativo rápido.
+            <b>Historia:</b> Nacido en Krypton como Kal-El, fue enviado a la Tierra antes 
+            de la destrucción de su planeta. Criado como Clark Kent en Smallville, 
+            desarrolla increíbles habilidades gracias al sol amarillo, convirtiéndose 
+            en el protector más poderoso de la humanidad.
         </p>
 
         <div class="info-grid">
-            <div class="info-item"><b>Edad</b> 25 años</div>
-            <div class="info-item"><b>Especie</b> Humano</div>
-            <div class="info-item"><b>Habilidad</b> Maestría en Espada</div>
-            <div class="info-item"><b>Ubicación</b> Tierras del Norte</div>
+            <div class="info-item"><b>Planeta</b> Krypton</div>
+            <div class="info-item"><b>Identidad</b> Clark Kent</div>
+            <div class="info-item"><b>Trabajo</b> Periodista</div>
+            <div class="info-item"><b>Debilidad</b> Kryptonita</div>
         </div>
+
+        <!-- NUEVA SECCIÓN DE PODERES -->
+        <div class="powers">
+            <h2>Poderes</h2>
+            <ul>
+                <li>🛫 <b>Vuelo:</b> Puede volar a velocidades supersónicas e incluso espaciales.</li>
+                <li>💪 <b>Súper fuerza:</b> Capaz de levantar edificios, montañas y planetas.</li>
+                <li>🔥 <b>Visión de calor:</b> Lanza rayos de energía desde sus ojos.</li>
+                <li>👁️ <b>Visión de rayos X:</b> Puede ver a través de objetos sólidos.</li>
+                <li>❄️ <b>Súper aliento:</b> Expulsa aire congelante o con gran fuerza.</li>
+                <li>⚡ <b>Súper velocidad:</b> Se mueve más rápido que una bala.</li>
+                <li>🛡️ <b>Invulnerabilidad:</b> Resiste balas, explosiones y condiciones extremas.</li>
+            </ul>
+        </div>
+
     </div>
 </div>
 
