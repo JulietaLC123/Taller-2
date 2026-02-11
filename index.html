@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personaje</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; padding: 20px; }
+        .card { background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 600px; overflow: hidden; }
+        .header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-top: -75px; background: #ddd; }
+        .content { padding: 30px; }
+        h2 { margin: 10px 0; color: #2c3e50; }
+        .tag { display: inline-block; background: #e74c3c; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; margin-bottom: 15px; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; }
+        .info-item b { color: #7f8c8d; display: block; font-size: 0.85em; text-transform: uppercase; }
+        .bio { line-height: 1.6; color: #555; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <!-- Reemplaza la URL de la imagen con la de tu personaje -->
+        <div style="height: 80px;"></div> 
+    </div>
+    <div style="text-align: center;">
+        <img src="https://via.placeholder.com" alt="Avatar del Personaje" class="profile-img">
+    </div>
+    <div class="content">
+        <div style="text-align: center;">
+            <span class="tag">Guerrero Solitario</span>
+            <h2>Nombre del Personaje</h2>
+        </div>
+        
+        <p class="bio">
+            <b>Historia:</b> Un breve resumen sobre el origen del personaje, sus motivaciones y el mundo en el que habita. Ideal para dar contexto narrativo rápido.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item"><b>Edad</b> 25 años</div>
+            <div class="info-item"><b>Especie</b> Humano</div>
+            <div class="info-item"><b>Habilidad</b> Maestría en Espada</div>
+            <div class="info-item"><b>Ubicación</b> Tierras del Norte</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
