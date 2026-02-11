@@ -6,11 +6,38 @@
     <title>Superman - Ficha de Personaje</title>
     <style>
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            display: flex; 
-            justify-content: center; 
-            padding: 20px; 
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                    /* Imagen de fondo general (Metrópolis) */
+                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                                url('https://images.unsplash.com') no-repeat center center fixed;
+                    background-size: cover;
+                    display: flex; 
+                    justify-content: center; 
+                    padding: 20px;
+                    position: relative;
+                    overflow-x: hidden; /* Evita scroll horizontal por las imágenes laterales */
+                }
+                        body::before {
+            content: "";
+            position: fixed;
+            left: 20px;
+            bottom: 0;
+            width: 350px;
+            height: 500px;
+            background: url('https://www.pngmart.com') no-repeat;
+            background-size: contain;
+            z-index: -1;
+        }
+                body::after {
+            content: "";
+            position: fixed;
+            right: 20px;
+            bottom: 0;
+            width: 350px;
+            height: 500px;
+            background: url('https://www.pngmart.com') no-repeat;
+            background-size: contain;
+            z-index: -1;
         }
 
         .card { 
@@ -103,7 +130,21 @@
             background: #eef3f8;
             border-left: 5px solid #0033a0;
             border-radius: 8px;
-}
+        }
+        .debut {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fdf2f2;
+            border-left: 5px solid #e10600;
+            border-radius: 8px;
+        }
+        .evolution {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f4f8f4;
+            border-left: 5px solid #2c5364;
+            border-radius: 8px;
+        }
 
 
     </style>
@@ -152,6 +193,102 @@
                 de la Gran Depresión, los autores reinventaron al personaje como un 
                 <b>"campeón de los oprimidos"</b> que luchaba contra la injusticia social.
             </div>
+
+            <div class="debut">
+                <b>El debut en Action Comics (1938):</b><br><br>
+
+                Después de años de rechazos por parte de varios editores, 
+                la editorial National Allied Publications (hoy DC Comics) 
+                compró el personaje.
+
+                <br><br>
+
+                <b>Fecha clave:</b> El 18 de abril de 1938 se publicó el histórico 
+                <i>Action Comics #1</i>, marcando el nacimiento oficial del género 
+                de superhéroes.
+
+                <br><br>
+
+                <b>El trato:</b> Siegel y Shuster vendieron los derechos totales 
+                de Superman por solo <b>130 dólares</b>.
+            </div>
+            <div class="evolution">
+                <b>Evolución del personaje:</b><br><br>
+
+                <b>Poderes iniciales:</b> En sus comienzos, Superman no volaba; 
+                solo podía saltar grandes distancias, correr más rápido que un tren 
+                y levantar objetos pesados.
+
+                <br><br>
+
+                <b>Inspiración:</b> Su traje, con la capa y los calzoncillos por fuera, 
+                se inspiró en los forzudos de circo de la época.
+
+                <br><br>
+
+                <b>Identidad:</b> Se estableció su origen como el alienígena Kal-El, 
+                enviado desde el planeta Krypton y criado como Clark Kent por una 
+                familia de granjeros en la Tierra.
+
+                <br><br>
+
+                Tras décadas de batallas legales, en los años 70 se reconoció formalmente 
+                a Siegel y Shuster como los creadores oficiales, otorgándoles una 
+                pensión vitalicia y crédito en todas las publicaciones.
+            </div>
+            <div class="legal">
+                <h2>⚖️ Disputas legales y derechos de autor</h2>
+
+                <p><b>El pecado original (1938-1948)</b><br><br>
+                Tras vender los derechos por solo 130 dólares en 1938, Siegel y Shuster 
+                demandaron a la editorial en 1947 buscando anular el contrato original 
+                ante el éxito masivo del personaje. El tribunal falló a favor de la editorial, 
+                pero tras una larga lucha, los creadores aceptaron un acuerdo de 94,000 dólares 
+                en 1948 a cambio de renunciar a todos los derechos presentes y futuros 
+                de Superman y Superboy.
+                </p>
+
+                 <p><b>El rescate de los años 70</b><br><br>
+                En 1975, con el estreno de la película protagonizada por Christopher Reeve 
+                en el horizonte, Jerry Siegel y Joe Shuster (quienes vivían en la pobreza 
+                y casi ciegos) lanzaron una campaña de presión pública. 
+                Ante el escándalo mediático, Warner Bros. acordó otorgarles:
+                <ul>
+                    <li>Una pensión vitalicia anual (inicialmente de 20,000 dólares).</li>
+                    <li>Seguro médico completo.</li>
+                    <li>El crédito oficial "Creado por Jerry Siegel y Joe Shuster" 
+                    en todas las publicaciones y películas.</li>
+                </ul>
+                </p>
+
+                <p><b>La batalla de los herederos (2004-2016)</b><br><br>
+                Aprovechando una provisión de la Ley de Derechos de Autor de EE. UU. 
+                que permite a los herederos reclamar derechos tras 56 años, 
+                la familia de Siegel inició un juicio en 2004.
+                <br><br>
+                <b>2008:</b> Un juez dictaminó inicialmente que los herederos de Siegel 
+                habían recuperado con éxito los derechos de los elementos originales 
+                presentes en <i>Action Comics #1</i>.
+                <br><br>
+                <b>2012-2013:</b> Tras varias apelaciones, los tribunales determinaron 
+                que los acuerdos previos firmados en los años 90 impedían estos reclamos, 
+                reafirmando a Warner Bros. como dueño total de la franquicia.
+                </p>
+
+                <p><b>Conflictos recientes (2024-2025)</b><br><br>
+                Los herederos de Joe Shuster presentaron una demanda centrada 
+                en derechos internacionales (Reino Unido, Canadá, Australia e Irlanda), 
+                alegando que, bajo leyes británicas, los derechos debieron revertir 
+                a la familia 25 años después de la muerte del creador.
+                <br><br>
+                <b>Estado actual:</b> En abril de 2025, un juez de Nueva York 
+                desestimó la demanda, argumentando que los tribunales de EE. UU. 
+                no tienen jurisdicción para decidir sobre leyes de otros países. 
+                Esto despejó el camino para el estreno mundial de la película 
+                <i>Superman</i> dirigida por James Gunn en el verano de 2025.
+                </p>
+            </div>
+
 
         <div class="info-grid">
             <div class="info-item"><b>Planeta</b> Krypton</div>
