@@ -88,9 +88,11 @@
         }
 
         .bio { 
-            line-height: 1.6; 
-            color: #444; 
-            margin-top: 20px; 
+            margin-top: 20px;
+            padding: 15px;
+            background: #fdf2f2;
+            border-left: 5px solid #e10600;
+            border-radius: 8px; 
         }
 
         .info-grid { 
@@ -133,6 +135,83 @@
             border-left: 5px solid #0033a0;
             border-radius: 8px;
 }
+        .debut {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fdf2f2;
+            border-left: 5px solid #e10600;
+            border-radius: 8px;
+        }
+
+        /* --- SECCIÓN EVOLUCIÓN --- */
+        .evolution {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f4f8f4;
+        border-left: 5px solid #2c5364;
+        border-radius: 8px;
+        }
+
+        /* --- SECCIÓN LEGAL / DISPUTAS --- */
+        .legal {
+        margin-top: 25px;
+        padding: 20px;
+        background: #f3ecff;
+        border-left: 6px solid #6a0dad;
+        border-radius: 10px;
+        }
+
+        .legal h2 {
+        color: #6a0dad;
+        margin-bottom: 15px;
+        }
+
+        .legal ul {
+        margin-top: 10px;
+        padding-left: 20px;
+        }
+                .info-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; 
+            margin-top: 20px; 
+            border-top: 2px solid #eee; 
+            padding-top: 25px; 
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease; /* Suaviza la animación */
+            cursor: default;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Efecto al pasar el ratón (Hover) */
+        .info-item:hover {
+            background: #e10600; /* Color rojo Superman */
+            color: white;
+            transform: translateY(-5px); /* Se eleva un poco */
+            box-shadow: 0 8px 15px rgba(225, 6, 0, 0.3);
+            border-color: #e10600;
+        }
+
+        .info-item b { 
+            display: block; 
+            font-size: 0.75em; 
+            text-transform: uppercase; 
+            margin-bottom: 4px;
+            color: #0033a0; /* Azul Superman */
+            transition: color 0.3s ease;
+        }
+
+        /* Cambia el color de la etiqueta negrita al hacer hover */
+        .info-item:hover b {
+            color: yellow;
+        }
 
 
     </style>
@@ -333,7 +412,7 @@
             <h2>Primera Aparición</h2>
             
             <div style="text-align:center; margin-bottom:15px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Action_Comics_1.jpg" 
+                <img src="https://static.wikia.nocookie.net/comicdc/images/9/9e/Action_Comics_Vol_1_1.png/revision/latest/scale-to-width-down/1000?cb=20200509233147&path-prefix=es" 
                      alt="Action Comics #1 (1938)"
                      style="width:150px; border-radius:8px; box-shadow:0 5px 15px rgba(0,0,0,0.3);">
             </div>
