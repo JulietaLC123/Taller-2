@@ -17,28 +17,30 @@
                     position: relative;
                     overflow-x: hidden; /* Evita scroll horizontal por las imágenes laterales */
                 }
-                        body::before {
+        body::before {
             content: "";
             position: fixed;
-            left: 20px;
-            bottom: 0;
-            width: 350px;
-            height: 500px;
-            background: url('https://www.pngmart.com') no-repeat;
-            background-size: contain;
+            left: 0;
+            top: 0; /* Desde lo más alto */
+            width: 50%; /* Ocupa el 30% del ancho de la pantalla */
+            height: 100vh; /* Hasta lo más bajo */
+            background: url('https://w0.peakpx.com/wallpaper/652/385/HD-wallpaper-superman-protector-of-metropolis-superman-thomas-kinkade-art-fantasy-painting-comics-pictura.jpg') no-repeat center center;
+            background-size: cover; /* Estira la imagen para cubrir todo el espacio */
             z-index: -1;
         }
-                body::after {
+
+        body::after {
             content: "";
             position: fixed;
-            right: 20px;
-            bottom: 0;
-            width: 350px;
-            height: 500px;
-            background: url('https://www.pngmart.com') no-repeat;
-            background-size: contain;
+            right: 0;
+            top: 0; /* Desde lo más alto */
+            width: 50%; /* Ocupa el 30% del ancho de la pantalla */
+            height: 100vh; /* Hasta lo más bajo */
+            background: url('https://images.wallpapersden.com/image/wxl-superman-metropolis-dc-comic_73854.jpg') no-repeat center center;
+            background-size: cover; /* Estira la imagen para cubrir todo el espacio */
             z-index: -1;
         }
+
 
         .card { 
             background: white; 
